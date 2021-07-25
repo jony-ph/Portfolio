@@ -1,0 +1,39 @@
+html{
+    scroll-behavior: smooth;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fafafa;
+    color: var(--black);
+}
+
+:root{
+    --purple-dark: #6C63FF;
+    --black: #221f1f;
+    --white: #e7e7e7;
+    --blue: #4F70E8;
+}
+
+.hero, .about_me, .portfolio, .contact{
+    padding: 4.0625rem 5rem 1.875rem 5rem;
+}
+
+.hero{
+    height: calc(100vh - 4.0625rem);
+}
+
+.title-section{
+    font-size: 2rem;
+    font-weight: lighter;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.description{
+    margin: 1.5625rem 0;
+}
+
+@media screen and (max-width: 765px) {
+    
+    .hero, .about_me, .portfolio, .contact{
+        padding: 4.0625rem 1.875rem 1.875rem 1.875rem;
+    }
+
+}

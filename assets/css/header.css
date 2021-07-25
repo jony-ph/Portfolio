@@ -1,0 +1,152 @@
+.header{
+    position: fixed;
+    display: flex;
+    z-index: 99;
+    top: 0;
+
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1.1em 7em;
+    width: 100%;
+
+    background-color: #fff;
+    font-size: 1.125rem;
+}
+
+.logo{
+    font-family: 'Julius Sans One', sans-serif;
+    text-decoration: none;
+    color: #1a1919;
+    font-weight: bold;
+    font-size: 1.4rem;
+     
+    display: inline;
+}
+
+.logo:hover{
+    color: var(--purple-dark);
+    transition: ease .4s;
+}
+
+.menu{
+    display: none;
+}
+
+.nav-bar{
+    display: flex;
+}
+
+.nav-bar__ul-li {
+    display: inline-block;
+    padding: 0 2em;
+}
+
+.nav-bar__ul-li-a--home{
+    text-decoration: none;
+    color: var(--purple-dark);
+    font-family: 'PT Sans', sans-serif;
+}
+
+.nav-bar__ul-li-a--home:hover{
+    color: #5850dd;
+}
+
+.nav-bar__ul-li-a{
+    text-decoration: none;
+    color: #1a1919;
+    font-family: 'PT Sans', sans-serif;
+}
+.nav-bar__ul-li-a:hover{
+    color: var(--purple-dark);
+}
+
+.switch{
+    align-self: center;
+    width: 1.5rem;
+    height: 0.9rem;
+    border: none;
+    border-radius: 0.625rem;
+    position: relative;
+    text-emphasis: none;
+    cursor: pointer;
+}
+
+.switch::after{
+    content: "";
+    width: 0.9rem;
+    height: 0.9rem;
+    position: absolute;
+    background-color: #f1f1f1;
+    top: 0;
+    left: 0;
+    right: unset;
+    border-radius: 50%;
+    transition: 1s ease all;
+    box-shadow: 0 0 0.125rem 0.125rem rgba(0, 0, 0, .2);
+}
+
+.active{
+    background-color: var(--purple-dark);
+}
+
+.active::after{
+    right:0;
+    left: unset;
+}
+
+@media screen and (max-width : 900px){
+
+    .header{
+        padding: 1.1em 1.2em;
+    }
+
+    .menu{
+        display: inline-block;
+        font-size: 1.7rem;
+    }
+
+    .menu:hover{
+        cursor: pointer;
+        color: var(--purple-dark);
+    }
+
+    .nav-bar{
+        flex-direction: column;
+        position: fixed;
+        top: 4.0371rem;
+        left: 100%;
+
+        width: 100%;
+        height: calc(100vh - 4.0371rem);
+
+        background-color: #fff;
+        overflow-y: auto;
+
+        transition: left 0.3s;
+        text-align: center;
+    }
+
+    .nav-bar__ul-li{
+        display: block;
+        padding: 1.6em 0;
+    }
+
+    .open{
+        left: 0;
+    }
+
+    .switch{
+        margin: 3em 0;
+        width: 2.1rem;
+        height: 1rem;
+
+    }
+    
+    .switch::after{
+        width: 1.1rem;
+        height: 1.1rem;
+
+    }
+
+}

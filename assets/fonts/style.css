@@ -1,0 +1,69 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('icomoon.eot?has2zq');
+  src:  url('icomoon.eot?has2zq#iefix') format('embedded-opentype'),
+    url('icomoon.ttf?has2zq') format('truetype'),
+    url('icomoon.woff?has2zq') format('woff'),
+    url('icomoon.svg?has2zq#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak-as: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-menu:before {
+  content: "\e908";
+}
+.icon-c:before {
+  content: "\e900";
+}
+.icon-css3:before {
+  content: "\e901";
+}
+.icon-django:before {
+  content: "\e902";
+}
+.icon-html5:before {
+  content: "\e903";
+}
+.icon-java:before {
+  content: "\e904";
+}
+.icon-javascript:before {
+  content: "\e905";
+}
+.icon-mysql:before {
+  content: "\e906";
+}
+.icon-python:before {
+  content: "\e907";
+}
+.icon-eye:before {
+  content: "\e9ce";
+}
+.icon-mail:before {
+  content: "\ea83";
+}
+.icon-facebook2:before {
+  content: "\ea91";
+}
+.icon-github:before {
+  content: "\eab0";
+}
+.icon-linkedin:before {
+  content: "\eac9";
+}

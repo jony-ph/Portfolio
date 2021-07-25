@@ -1,0 +1,73 @@
+.hero{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap-reverse;
+}
+
+.home-description__h1{
+    font-size: 3rem;
+    font-family: 'IBM Plex Mono' monospace;
+}
+
+.home-description__h1-b{
+    color: var(--purple-dark);
+}
+
+.home-description__h2{
+    font-size: 1.7rem;
+    font-family: 'Jaldi', sans-serif;
+}
+
+.home-description__button{
+    display: inline-block;
+    font-size: 1rem;
+    color: #f0f0f0;
+    border: none;
+    border-radius: 0.4em;
+    padding: 1.15em 1.38em;
+    margin: 1.3em 0;
+    background-color: var(--purple-dark);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.home-description__button:hover{
+    cursor: pointer;
+    background-color: #5850dd;
+}
+
+.home-image__img{
+    width: 35rem;
+    height: 21rem;
+}
+
+.typed{
+    color: var(--blue);
+}
+
+@media screen and (max-width: 765px) {
+    
+    .home-image__img{
+        width: 100%;
+    }
+
+    .home-description__h1{
+        font-size: 1.8rem;
+    }
+
+    .home-description__h2{
+        font-size: 1.1rem;
+        font-family: 'Jaldi', sans-serif;
+    }
+
+    .home-description__button{
+        font-size: 0.75rem;
+    }
+
+    .home-description{
+        text-align: center;
+    }
+
+}
