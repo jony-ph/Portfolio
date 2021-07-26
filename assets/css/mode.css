@@ -35,6 +35,14 @@ body.dark .container-icon{
     background-color: #2f2e41;
 }
 
+body.dark .front, .back{
+    background-color: #2f2e41;
+}
+
+body.dark .back{
+    background-color: #2f2e41;
+}
+
 body.dark .icon{
     color: #eeecec;
 }
@@ -51,5 +59,9 @@ body.dark .footer{
 
 body.dark .nav-bar{
         background-color: #000;
+}
+
+body.dark .line{
+    background-color: #fff;
 }
 

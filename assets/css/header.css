@@ -29,8 +29,59 @@
     transition: ease .4s;
 }
 
-.menu{
+#hamburger{
     display: none;
+    width: 1.5625rem;
+    height: 1.5625rem;
+}
+
+.btn-hamburger{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    border: 0;
+
+    background: none;
+    cursor: pointer;  
+}
+
+.line{
+    display: block;
+
+    width: 100%;
+    height: 0.125rem;
+    margin: 0.3125rem auto;
+
+    background-color: black;
+    border-radius: 0.3125rem;
+
+    animation-duration: 0.45s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.btn-hamburger.open .top{
+    animation-name: top-line-animation;
+}
+
+.btn-hamburger.open .mid{
+    animation-name: mid-line-animation;
+}
+
+.btn-hamburger.open .bottom{
+    animation-name: bottom-line-animation;
+}
+
+.top{
+    animation-name: top-line-animation-close;
+}
+
+.mid{
+    animation-name: mid-line-animation-close;
+}
+
+.bottom{
+    animation-name: bottom-line-animation-close;
 }
 
 .nav-bar{
@@ -101,14 +152,13 @@
         padding: 1.1em 1.2em;
     }
 
-    .menu{
+    #hamburger{
         display: inline-block;
-        font-size: 1.7rem;
     }
 
-    .menu:hover{
-        cursor: pointer;
-        color: var(--purple-dark);
+    .btn-hamburger:hover > .line{
+        background-color: var(--purple-dark);
+        transition: background-color .2s ease-in;
     }
 
     .nav-bar{
@@ -149,4 +199,85 @@
 
     }
 
+}
+
+/* Animations */
+
+@keyframes top-line-animation {
+
+    50%, 100% {
+        margin: auto 0;
+        transform: translateY(0.125rem) rotate(-45deg);
+    }
+    
+}
+
+@keyframes bottom-line-animation {
+
+    50%, 100% {
+        margin: auto 0;
+        transform: translateY(-0.125rem) rotate(45deg);
+    }
+    
+}
+
+@keyframes mid-line-animation {
+
+    0%, 25% {
+        width: 75%;
+    }
+
+    50%, 100% {
+        margin: 0 auto;
+        width: 0;
+        opacity: 0;
+    }
+    
+}
+
+@keyframes top-line-animation-close {
+
+   0% {
+       margin: 0 auto;
+       transform: translateY(2px) rotate(-45deg);
+   }
+
+   50%, 100% {
+       margin: 0.3125rem auto;
+       transform: translateY(0) rotate(0);
+   }
+    
+}
+
+@keyframes mid-line-animation-close {
+
+    0% {
+        margin: 0 auto;
+        width: 0;
+        opacity: 0;
+
+    }
+
+    20%, 100% {
+        margin: 0 auto;
+        width: 100%;
+        opacity: 1;
+        
+    }
+     
+ }
+
+ @keyframes bottom-line-animation-close {
+
+    0% {
+        margin: 0 auto;
+        transform: translateY(-2px) rotate(45deg);
+    }
+
+    
+    50%, 100% {
+        margin: 0.3125rem auto;
+        transform: translateY(0) rotate(0);
+    }
+    
 }

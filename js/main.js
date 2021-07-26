@@ -1,5 +1,5 @@
 const btnSwitch = document.querySelector('#switch')
-const btnMenu = document.querySelector('.menu')
+const btnMenu = document.querySelector('.btn-hamburger')
 const navBar = document.querySelector('.nav-bar')
 const links = document.querySelectorAll('.links')
 
@@ -28,6 +28,7 @@ function loadEventListeners(){
 
 function navBarToggle(){
 	navBar.classList.toggle('open')
+	btnMenu.classList.toggle('open')
 }
 
 function theme() {
@@ -46,6 +47,7 @@ function resizeNavBar(){
 	if (window.innerWidth > 900){
 		if( navBar.classList.contains('open') ) {
 			navBar.classList.remove('open')
+			btnMenu.classList.remove('open')
 		}
 	}
 }

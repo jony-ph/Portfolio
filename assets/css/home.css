@@ -21,21 +21,27 @@
 
 .home-description__button{
     display: inline-block;
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: #f0f0f0;
     border: none;
     border-radius: 0.4em;
-    padding: 1.15em 1.38em;
+    padding: 1em 1.38em;
     margin: 1.3em 0;
     background-color: var(--purple-dark);
-    letter-spacing: 0.1em;
     text-transform: uppercase;
     text-decoration: none;
+
+    font-family: 'Quicksand', sans-serif;
 }
 
 .home-description__button:hover{
     cursor: pointer;
     background-color: #5850dd;
+}
+
+.icon-inbox-download{
+    padding: 0 0.3em;
+    font-size: 1.15em;
 }
 
 .home-image__img{
@@ -70,4 +76,27 @@
         text-align: center;
     }
 
+}
+
+@media screen and (max-width: 350px) {
+
+    .home-description__h1{
+        font-size: 1.4rem;
+    }
+
+    .home-description__h2{
+        font-size: 0.95rem;
+    }
+
+    .home-description__button{
+        font-size: 0.6rem;
+    }
+
+}
+
+@media screen and (min-width: 765px) and (max-width: 1190px){
+
+    .home-description{
+        text-align: center;
+    }
 }

@@ -1,21 +1,26 @@
 .container-contact{
     display: flex;
-    margin: 6.25rem 0;
     justify-content: center;
 }
 
-.contact-icons{
-    display: grid;
-    grid-gap: 1.25rem;
-    grid-auto-rows: 10.625rem;
-    grid-auto-flow: column;
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 7.8125rem), 1fr));
+.contact-img{
+    text-align: center;
+    margin: auto 0;
 }
 
-.contact-img{
-    grid-column: 1 / span 2;
-    grid-row: 1 / span 2;
-    margin-right: 1.875rem;
+.contact-img__img{
+    margin: 100px;
+    width: 60%;
+}
+
+.contact-icons{
+    align-self: center;
+    width: 25%;
+
+    display: grid;
+    grid-gap: 1.25rem;
+    grid-auto-rows: 9.375rem;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 130px), 1fr));
 }
 
 .contact-icons__div{
@@ -40,21 +45,39 @@
 @media screen and (max-width: 765px) {
 
     .container-contact{
+        flex-wrap: wrap;
+    }
+
+    .container-contact{
+        width: 100%;
         display: flex;
         margin: 0;
         justify-content: center;
     }
 
     .contact-icons{
+        width: 100%;
+        grid-gap: 0.625rem;
         grid-auto-flow: row;
-        grid-auto-rows: 9.375rem;
+        grid-auto-rows: 8.125rem;
     }
 
-    .contact-img{
-        margin: auto 1.25rem;
-    }
-    .contact-icons__div-a{
-        font-size: 3.125rem;
+    .contact-img__img {
+        margin: 1.5625rem auto;
     }
     
+}
+
+@media screen and (max-width: 350px) {
+
+    .contact-icons{
+        width: 100%;
+        grid-auto-rows: 100px;
+        grid-template-columns: repeat(auto-fit, minmax(min(100%, 100px), 1fr));
+    }
+
+    .contact-icons__div-a{
+        font-size: 2.7rem;
+    }
+
 }

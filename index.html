@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="assets/images/favicon-portfolio.ico" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/general.css">
-    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/header.css">
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/home.css">
     <link rel="stylesheet" href="assets/css/mode.css">
@@ -20,14 +20,25 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Jaldi&family=Julius+Sans+One&family=Montserrat&family=Mulish&family=PT+Sans&family=Quicksand:wght@300&display=swap" rel="stylesheet">
 
-    <title>Home</title>
+    <title>JFPH</title>
 </head>
 <body>
 
     <header class="header">
 
         <a class="logo" href="#home"> JFPH;</a>
-        <i class="icon-menu menu"></i>
+
+        <div id="hamburger">
+
+            <button class="btn-hamburger">
+    
+                <span class="line top"></span>
+                <span class="line mid"></span>
+                <span class="line bottom"></span>
+    
+            </button>
+
+        </div>
         
         <nav class="nav-bar">
 
@@ -56,7 +67,7 @@
                     <b class="home-description__h1-b">Jonathan</b>  Francisco <br> <b class="home-description__h1-b">Pérez</b> Hernández
                 </h1>
                 <h2 class="home-description__h2">&lt;I am <span class="typed"></span>&#47;&#62; </h2>
-                <a class="home-description__button" href="assets/CV.pdf" target="_BLANK" download="CV.pdf">Download CV</a>
+                <a class="home-description__button" href="assets/CV.pdf" target="_BLANK">Download CV <i class="icon-inbox-download"></i></a>
     
             </div>
     
@@ -113,7 +124,7 @@
     
                 <div class="technologies">
 
-                    <div class="technologies__div container-icon">
+                    <div class="technologies__div">
 
                         <div class="card front">
 
@@ -131,7 +142,7 @@
                         
                     </div>
                     
-                    <div class="technologies__div container-icon">
+                    <div class="technologies__div">
 
                         <div class="card front">
 
@@ -148,7 +159,7 @@
                         
 
                     </div>
-                    <div class="technologies__div container-icon">
+                    <div class="technologies__div">
 
                         <div class="card front">
 
@@ -166,7 +177,7 @@
 
 
                     </div>
-                    <div class="technologies__div container-icon">
+                    <div class="technologies__div">
 
                         <div class="card front">
 
@@ -184,25 +195,25 @@
 
 
                     </div>
-                    <div class="technologies__div container-icon">
+                    <div class="technologies__div">
 
                         <div class="card front">
 
-                            <i class="tech-icon icon-django icon" title="Django"></i>
-                            <p class="technologies__div-p">Django</p>
+                            <i class="tech-icon icon-java icon" title="Java"></i>
+                            <p class="technologies__div-p">Java</p>
 
                         </div>
                         <div class="card back">
 
-                            <i class="tech-icon icon-django icon" title="Django"></i>
-                            <p class="technologies__div-p">Django</p>
+                            <i class="tech-icon icon-java icon" title="Java"></i>
+                            <p class="technologies__div-p">Java</p>
 
                         </div>
                         
 
 
                     </div>
-                    <div class="technologies__div container-icon">
+                    <div class="technologies__div">
 
                         <div class="card front">
 
@@ -220,7 +231,7 @@
 
 
                     </div>
-                    <div class="technologies__div container-icon">
+                    <div class="technologies__div">
 
                         <div class="card front">
 
@@ -232,6 +243,24 @@
 
                             <i class="tech-icon icon-mysql icon" title="MySQL"></i>
                             <p class="technologies__div-p">MySQL</p>
+
+                        </div>
+                        
+
+                    </div>
+
+                    <div class="technologies__div">
+
+                        <div class="card front">
+
+                            <i class="tech-icon icon-cplusplus icon" title="C++"></i>
+                            <p class="technologies__div-p">C++</p>
+
+                        </div>
+                        <div class="card back">
+
+                            <i class="tech-icon icon-cplusplus icon" title="C++"></i>
+                            <p class="technologies__div-p">C++</p>
 
                         </div>
                         
@@ -392,14 +421,14 @@
 
             <div class="container-contact"> 
 
+                <div class="contact-img">
+
+                    <img class="contact-img__img" src="assets/images/mail_sent.svg" alt="Sent mail image">
+
+                </div>
+
                 <div class="contact-icons">
 
-                    
-                    <div class="contact-img">
-
-                        <img class="contact-img__img" src="assets/images/mail_sent.svg" alt="Sent mail image">
-
-                    </div>
 
                     <div class="contact-icons__div container-icon">
                     
