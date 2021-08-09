@@ -1,24 +1,35 @@
 .projects{
+    background-color: var(--purple-dark);
+    border-radius: 3.125rem;
+    padding: 2.5rem 1.875rem;
+    margin: 4.6875rem 0; /*Temporaly*/
+
+
     display: grid;
     grid-gap: 1.875rem;
     align-items: center;
     justify-content: center;
-    grid-template-rows: max-content;
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 350px), 1fr));
+    grid-template-rows: min-content;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 400px), 1fr));
 }
 
 .projects__div{
     position: relative;
     overflow: hidden;
     border-radius: 0.625rem;
+
+    height: 100%;
+
+    box-shadow: 0.4375rem 0.4375rem 0.625rem black;
 }
 
 .projects__div-img{
     object-fit: cover;
+    height: 100%;
 }
 
 .projects__div:hover > .projects__div-img{
-    filter: blur(0.625rem);
+    filter: blur(1.25rem);
 }
 
 .projects__div-span{
@@ -27,18 +38,27 @@
     height: 100%;
     left: 0;
 
-    background-color: #0000008f;
+    background-color: #ffffffa8;
     text-align: center;
     border-radius: 0.625rem;
-    color: var(--white);
-    font-size: 1.15rem;
+    font-size: 1.3rem;
 
-    transform: translateY(100%);
+    transform: translateY(98%);
     transition: transform 0.5s ease-out;
 }
-
 .projects__div:hover .projects__div-span{
     transform: translateY(0%);
+}
+
+.list-tech{
+    background-color: #7070704b;
+    padding-top: 0.5em;
+    padding-bottom: 0.1em;
+}
+
+.list-tech__li{
+    display: inline-block;
+    width: 20px;
 }
 
 .projects__div-span-h3{
@@ -49,12 +69,14 @@
 .projects__div-span-p{
     margin: 1.756em 1.429em;
     font-size: 0.85em;
+
+    color: #383838d8;
 }
 
 .projects__div-span-a{
-    color: #dddadac5;
-    padding: 0.715em;
-    border-radius: 0.715em;
+    color: #383838d8;
+
+    margin: 0 0.3em;
     font-size: 1em;
     text-decoration: none;
 }
@@ -69,24 +91,32 @@
 
 @media screen and (max-width:675px){
 
+    .projects{
+        padding: 2.3rem 1rem;
+    }
+
     .projects__div-span{
-        font-size: 1rem;
+        font-size: 0.7rem;
+    }
+
+    .list-tech__li{
+        width: 0.8125rem;
     }
 
 }
 
 @media screen and (max-width:350px){
 
-    .projects__div-span{
-        font-size: 0.8rem;
+    .projects{
+        padding: 2rem 1rem;
     }
 
-}
-
-@media screen and (min-width: 765px) and (max-width: 1190px){
-
     .projects__div-span{
-        font-size: 1.5rem;
+        font-size: 0.459rem;
     }
-    
+
+    .list-tech__li{
+        width: 0.5625rem;
+    }
+
 }
