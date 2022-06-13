@@ -1,9 +1,7 @@
 .projects{
     background-color: var(--purple-dark);
-    border-radius: 3.125rem;
+    border-radius: 1.875rem;
     padding: 2.5rem 1.875rem;
-    margin: 4.6875rem 0; /*Temporaly*/
-
 
     display: grid;
     grid-gap: 1.875rem;
