@@ -20,7 +20,7 @@
     color: #1a1919;
     font-weight: bold;
     font-size: 1.4rem;
-     
+
     display: inline;
 }
 
@@ -42,7 +42,7 @@
     border: 0;
 
     background: none;
-    cursor: pointer;  
+    cursor: pointer;
 }
 
 .line{
@@ -123,7 +123,7 @@
 .icon-switch{
     display: block;
 
-    background-color: none;
+    background: none;
     font-size: 1rem;
     color: #f8f8f8;
 }
@@ -132,16 +132,16 @@
     position: absolute;
     content: "";
 
-    width: 0.9375rem;
-    height: 0.9375rem;
+    width: 1.0313rem;
+    height: 1.0313rem;
     top: 0;
     left: 0;
-    
+
     box-shadow: 0 0 0.125rem 0.125rem rgba(0, 0, 0, .2);
     background-color: #f1f1f1;
     border-radius: 50%;
 
-    right: unset; 
+    right: unset;
 }
 
 .activeSection {
@@ -205,12 +205,12 @@
         margin: 2em auto;
         width: 2.5rem;
         height: 1.25rem;
-    }  
-    
+    }
+
     .icon-switch{
         font-size: 1.25rem;
     }
-    
+
     .switch::after{
         width: 1.25rem;
         height: 1.25rem;
@@ -226,7 +226,7 @@
         margin: auto 0;
         transform: translateY(0.125rem) rotate(-45deg);
     }
-    
+
 }
 
 @keyframes bottom-line-animation {
@@ -235,7 +235,7 @@
         margin: auto 0;
         transform: translateY(-0.125rem) rotate(45deg);
     }
-    
+
 }
 
 @keyframes mid-line-animation {
@@ -249,7 +249,7 @@
         width: 0;
         opacity: 0;
     }
-    
+
 }
 
 @keyframes top-line-animation-close {
@@ -263,7 +263,7 @@
        margin: 0.3125rem auto;
        transform: translateY(0) rotate(0);
    }
-    
+
 }
 
 @keyframes mid-line-animation-close {
@@ -279,9 +279,9 @@
         margin: 0 auto;
         width: 100%;
         opacity: 1;
-        
+
     }
-     
+
  }
 
  @keyframes bottom-line-animation-close {
@@ -291,10 +291,10 @@
         transform: translateY(-2px) rotate(45deg);
     }
 
-    
+
     50%, 100% {
         margin: 0.3125rem auto;
         transform: translateY(0) rotate(0);
     }
-    
+
 }

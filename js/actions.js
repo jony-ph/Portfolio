@@ -88,7 +88,7 @@ function footerText() {
 	footer.appendChild(text)
 }
 
-var typed = new Typed(".typed", {
+let typed = new Typed(".typed", {
 
 	strings: [
 		"Computer Systems Engineer",

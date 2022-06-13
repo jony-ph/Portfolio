@@ -3,7 +3,7 @@ export const projectList = [
     title: "Portfolio",
     description: "My web portfolio.",
     image: 'assets/images/project-portfolio.png',
-    view: "#",
+    view: "https://jony-ph.github.io/Portfolio",
     code: "https://github.com/jony-ph/Portfolio",
     techs: [
       "assets/images/icon-html.svg",
@@ -52,34 +52,38 @@ export const projectList = [
 export const techsList = [
   {
     name: "HTML",
-    icon: "icon-html5"
+    icon: "fa-html5"
   },
   {
     name: "CSS",
-    icon: "icon-css3"
+    icon: "fa-css3"
   },
   {
     name: "JavaScript",
-    icon: "icon-javascript"
+    icon: "fa-js"
+  },
+  {
+    name: "React",
+    icon: "fa-react"
+  },
+  {
+    name: "Node JS",
+    icon: "fa-node-js"
   },
   {
     name: "Python",
-    icon: "icon-python"
+    icon: "fa-python"
   },
   {
     name: "Java",
-    icon: "icon-java"
+    icon: "fa-java"
   },
   {
-    name: "C",
-    icon: "icon-c"
-  },
-  {
-    name: "C++",
+    name: "C/C++",
     icon: "icon-cplusplus"
   },
   {
-    name: "MySQL",
-    icon: "icon-mysql"
-  },
+    name: "PHP",
+    icon: "fa-php"
+  }
 ]

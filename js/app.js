@@ -52,6 +52,7 @@ function showProjects() {
         view.classList.add('projects__div-span-a')
         view.href = project.view
         view.textContent = 'View '
+        view.target = '_BLANK'
 
           const eye = document.createElement('i')
           eye.classList.add('icon-eye')
@@ -62,6 +63,7 @@ function showProjects() {
         code.classList.add('projects__div-span-a')
         code.href = project.code
         code.textContent = 'Code '
+        code.target = '_BLANK'
 
           const github = document.createElement('i')
           github.classList.add('icon-github')
@@ -95,7 +97,7 @@ function showTechnologies() {
       cardBack.classList.add('card', 'back')
 
         const iconFront = document.createElement('i')
-        iconFront.classList.add('tech-icon', tech.icon, 'icon')
+        iconFront.classList.add('tech-icon', 'fa-brands', tech.icon, 'icon')
         iconFront.title = tech.name
 
         const nameFront = document.createElement('p')
@@ -103,7 +105,7 @@ function showTechnologies() {
         nameFront.textContent = tech.name
 
         const iconBack = document.createElement('i')
-        iconBack.classList.add('tech-icon', tech.icon, 'icon')
+        iconBack.classList.add('tech-icon', 'fa-brands', tech.icon, 'icon')
         iconBack.title = tech.name
 
         const nameBack = document.createElement('p')
