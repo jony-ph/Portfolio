@@ -85,5 +85,9 @@ export const techsList = [
   {
     name: "PHP",
     icon: "fa-php"
+  },
+  {
+    name: "MySQL",
+    icon: "icon-mysql"
   }
 ]
