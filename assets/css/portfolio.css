@@ -59,6 +59,7 @@
 .list-tech__li{
     display: inline-block;
     width: 20px;
+    margin: 0 5px;
 }
 
 .projects__div-span-h3{

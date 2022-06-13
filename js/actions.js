@@ -54,7 +54,7 @@ function resizeNavBar(){
 
 var typed = new Typed(".typed", {
 
-    strings: ["Computer Systems Engineer",
+	strings: ["Computer Systems Engineer",
             "Software Developer",
             "Programmer"],
 	typeSpeed: 120, // Velocidad en mlisegundos para poner una letra,
