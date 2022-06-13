@@ -3,6 +3,7 @@ const btnMenu = document.querySelector('.btn-hamburger')
 const navBar = document.querySelector('.nav-bar')
 const navBarUl = document.querySelector('.nav-bar__ul')
 const links = document.querySelectorAll('.links')
+const footer = document.querySelector('.footer')
 
 if( localStorage.getItem('dark-mode') === 'true' ) {
 	document.body.classList.add('dark')
@@ -15,6 +16,10 @@ if( localStorage.getItem('dark-mode') === 'true' ) {
 loadEventListeners()
 
 function loadEventListeners(){
+
+	document.addEventListener('DOMContentLoaded', () => {
+		footerText()
+	})
 
 	window.addEventListener('resize', resizeNavBar)
 
@@ -70,6 +75,17 @@ function checkActiveClassExists() {
 			section.classList.remove('activeSection')
 		}
 	};
+}
+
+function footerText() {
+
+	const currentTime = new Date()
+	const year = currentTime.getFullYear()
+
+	const text = document.createElement('p')
+	text.textContent = `This page was created by Jonathan PH | All rights reserved  © ${year}.`
+
+	footer.appendChild(text)
 }
 
 var typed = new Typed(".typed", {
