@@ -48,3 +48,38 @@ export const projectList = [
     ]
   }
 ]
+
+export const techsList = [
+  {
+    name: "HTML",
+    icon: "icon-html5"
+  },
+  {
+    name: "CSS",
+    icon: "icon-css3"
+  },
+  {
+    name: "JavaScript",
+    icon: "icon-javascript"
+  },
+  {
+    name: "Python",
+    icon: "icon-python"
+  },
+  {
+    name: "Java",
+    icon: "icon-java"
+  },
+  {
+    name: "C",
+    icon: "icon-c"
+  },
+  {
+    name: "C++",
+    icon: "icon-cplusplus"
+  },
+  {
+    name: "MySQL",
+    icon: "icon-mysql"
+  },
+]

@@ -1,10 +1,14 @@
-import { projectList } from './data.js'
+import { projectList, techsList } from './data.js'
 
 const projects = document.querySelector('.projects')
+const technologies = document.querySelector('.technologies')
 
 eventListeners()
 function eventListeners() {
-  document.addEventListener('DOMContentLoaded', showProjects)
+  document.addEventListener('DOMContentLoaded', () => {
+    showProjects()
+    showTechnologies()
+  })
 }
 
 function showProjects() {
@@ -77,5 +81,45 @@ function showProjects() {
     
   })
 
+}
+
+function showTechnologies() {
+  techsList.forEach( tech => {
+    const container = document.createElement('div')
+    container.classList.add('technologies__div')
+
+      const cardFront = document.createElement('div')
+      cardFront.classList.add('card', 'front')
+
+      const cardBack = document.createElement('div')
+      cardBack.classList.add('card', 'back')
+
+        const iconFront = document.createElement('i')
+        iconFront.classList.add('tech-icon', tech.icon, 'icon')
+        iconFront.title = tech.name
+
+        const nameFront = document.createElement('p')
+        nameFront.classList.add('technologies__div-p')
+        nameFront.textContent = tech.name
+
+        const iconBack = document.createElement('i')
+        iconBack.classList.add('tech-icon', tech.icon, 'icon')
+        iconBack.title = tech.name
+
+        const nameBack = document.createElement('p')
+        nameBack.classList.add('technologies__div-p')
+        nameBack.textContent = tech.name
+
+      cardFront.appendChild(iconFront)
+      cardFront.appendChild(nameFront)
+
+      cardBack.appendChild(iconBack)
+      cardBack.appendChild(nameBack)
+
+    container.appendChild(cardFront)
+    container.appendChild(cardBack)
+
+    technologies.appendChild(container)
+  })
 }
 
