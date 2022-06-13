@@ -23,14 +23,6 @@ body.dark .nav-bar__ul-li-a:hover{
     color: var(--purple-dark);
 }
 
-body.dark .nav-bar__ul-li-a--home{
-    color: var(--purple-dark);
-}
-
-body.dark .nav-bar__ul-li-a--home:hover{
-    color: #5850dd;
-}
-
 body.dark .container-icon{
     background-color: #2f2e41;
 }

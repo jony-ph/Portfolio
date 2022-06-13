@@ -93,16 +93,6 @@
     padding: 0 2em;
 }
 
-.nav-bar__ul-li-a--home{
-    text-decoration: none;
-    color: var(--purple-dark);
-    font-family: 'PT Sans', sans-serif;
-}
-
-.nav-bar__ul-li-a--home:hover{
-    color: #5850dd;
-}
-
 .nav-bar__ul-li-a{
     text-decoration: none;
     color: #1a1919;
@@ -152,6 +142,14 @@
     border-radius: 50%;
 
     right: unset; 
+}
+
+.activeSection {
+    color: var(--purple-dark) !important;
+}
+
+.activeSection:hover{
+    color: #4c46bb !important;
 }
 
 .active{

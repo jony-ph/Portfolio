@@ -1,6 +1,7 @@
 const btnSwitch = document.querySelector('#switch')
 const btnMenu = document.querySelector('.btn-hamburger')
 const navBar = document.querySelector('.nav-bar')
+const navBarUl = document.querySelector('.nav-bar__ul')
 const links = document.querySelectorAll('.links')
 
 if( localStorage.getItem('dark-mode') === 'true' ) {
@@ -23,6 +24,8 @@ function loadEventListeners(){
 	for(let i=0; i < links.length; i++){
 		links[i].addEventListener('click', navBarToggle)
 	}
+
+	navBarUl.addEventListener('click', sectionActive)
 
 }
 
@@ -52,11 +55,30 @@ function resizeNavBar(){
 	}
 }
 
+function sectionActive(e) {
+	const target = e.target
+	if ( target.classList.contains('links') ){
+		checkActiveClassExists()
+		target.classList.add('activeSection')
+	}
+}
+
+function checkActiveClassExists() {
+	for(let i = 0; i < navBarUl.children.length; i++) {
+		let section = navBarUl.children[i].children[0]
+		if ( section.classList.contains('activeSection') ) {
+			section.classList.remove('activeSection')
+		}
+	};
+}
+
 var typed = new Typed(".typed", {
 
-	strings: ["Computer Systems Engineer",
-            "Software Developer",
-            "Programmer"],
+	strings: [
+		"Computer Systems Engineer",
+		"Web Developer",
+		"Software Developer",
+	],
 	typeSpeed: 120, // Velocidad en mlisegundos para poner una letra,
 	startDelay: 300, // Tiempo de retraso en iniciar la animacion. Aplica tambien cuando termina y vuelve a iniciar,
 	backSpeed: 50, // Velocidad en milisegundos para borrrar una letra,
