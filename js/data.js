@@ -22,29 +22,32 @@ export const projectList = [
     ]
   },
   {
-    title: "Tic Tac Toe",
-    description: "Traditional game known as tic tac toe.",
-    image: 'assets/images/project-tictactoe.png',
-    view: "https://trusting-curie-a88ee1.netlify.app/",
-    code: "https://github.com/jony-ph/gato",
+    title: "Web Store",
+    description: "A web store to manage your products.",
+    image: 'assets/images/project-store.png',
+    view: "#",
+    code: "https://github.com/jony-ph/almacen-web",
     techs: [
       "assets/images/icon-html.svg",
       "assets/images/icon-css.svg",
-      "assets/images/icon-javascript.svg"
+      "assets/images/icon-bootstrap.svg",
+      "assets/images/icon-javascript.svg",
+      "assets/images/icon-php.svg",
+      "assets/images/icon-mariadb.svg"
     ]
   },
   {
     title: "File Server",
-    description: "Local file server.",
+    description: "Web file server.",
     image: 'assets/images/project-fileserver.png',
     view: "#",
     code: "#",
     techs: [
       "assets/images/icon-html.svg",
       "assets/images/icon-css.svg",
+      "assets/images/icon-bootstrap.svg",
       "assets/images/icon-react.svg",
       "assets/images/icon-nodejs.svg",
-      "assets/images/icon-bootstrap.svg"
     ]
   }
 ]

@@ -19,6 +19,7 @@ function showProjects() {
     container.classList.add('projects__div')
 
       const image = document.createElement('img')
+      image.loading = "lazy"
       image.classList.add('projects__div-img')
       image.src = project.image;
       image.alt = "Covers of my projects"
@@ -32,8 +33,15 @@ function showProjects() {
           for(let i = 0; i < project.techs.length; i++) {
             const li = document.createElement('li')
             li.classList.add('list-tech__li')
+
+              let title = project.techs[i].split('\\').pop().split('/').pop();
+              title = title.replace('icon-', '')
+              title = title.replace('.svg', '')
   
               const icon = document.createElement('img')
+              icon.loading = "lazy"
+              icon.alt = "icon of " + title
+              icon.title = title
               icon.src = project.techs[i]
 
             li.appendChild(icon)
