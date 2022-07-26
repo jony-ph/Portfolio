@@ -18,7 +18,7 @@ export const projectList = [
 		description:
 			"API to obtain information about studies that have been carried out around the world on COVID-19.",
 		image: "assets/images/project-clinical-map.jpg",
-		view: "https://clinicalmapapi.azurewebsites.net",
+		view: "https://clinical-map-api.herokuapp.com",
 		code: "https://github.com/jony-ph/clinical-map-api",
 		techs: ["assets/images/icon-nodejs.svg", "assets/images/icon-mongodb.svg"],
 	},
